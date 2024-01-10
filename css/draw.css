@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+body {
+    background-color: rgb(21, 20, 20);
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    background-image: url(../image/feather-pointed-solid.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:25px;
+    height: 25px;
+    margin: -10px 0 0 -10px;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+    filter: drop-shadow(2px 2px 10px rgb(8, 134, 151));
+}
+
+.img_hover {
+    background-color: black;
+    height: 100%;
+}
+
+
+
+.img_hover img:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.sha {
+    box-shadow: 2px 3px 20px gray;
+    margin: 30px;
+}
+
+.card {
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+.logo_a {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    background-color: rgb(21, 20, 20);
+    width: 40px;
+    background-size: 0;
+}
+
+.img {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(21, 20, 20);
+    z-index: 1;
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.img i {
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 30px;
+}
+
+.img :hover{
+    opacity: 1;
+}
+
+.logo_a {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    background-color: rgb(21, 20, 20);
+    width: 40px;
+    background-size: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../image/list.svg);
+
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: #FFFFFF;
+}
+
+.nav-bg {
+    background-color: rgba(15, 15, 15, 0.8);
+}
+
+.top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.top img {
+    width: 35px;
+}
+
+.navbar-light .navbar-brand {
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+    margin: 10px 30px;
+}
+
+/*選單active狀態*/
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: overline;
+    filter: drop-shadow(2px 2px 5px gray);
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgba(175, 179, 179, 0.9);
+    opacity: 0.6;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(175, 179, 179, 0.9);
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.line {
+    margin: 20px 0px;
+    width: 38%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    transition: 1s;
+    position: absolute;
+    top: 17%;
+    justify-content: center;
+    animation-name: ani-line;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes ani-line {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    100% {
+        width: 38%;
+        left: 0;
+    }
+}
+
+.line2 {
+    margin: 20px 0px;
+    width: 38%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    transition: 1s;
+    position: absolute;
+    right: 0;
+    top: 17%;
+    justify-content: center;
+    animation-name: ani-line-2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes ani-line-2 {
+    0% {
+        width: 0%;
+        right: 0;
+    }
+
+    100% {
+        width: 38%;
+        right: 0;
+    }
+}
+
+.head {
+    height: 40vh;
+    background-image: url(../image/background2.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head p {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    margin: 0;
+    padding: 0;
+}
+
+.head_h1 {
+    color: #ffffff;
+    font-family: "Gill Sans", sans-serif;
+    mix-blend-mode: difference;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 15px white;
+}
+
+.head_h1 p {
+    color: #ffffff;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 15px;
+    mix-blend-mode: difference;
+    margin: 0;
+    padding: 0;
+}
+
+.ani {
+    margin: 40px 20px 20px 20px;
+    text-align: center;
+    filter: drop-shadow(2px 2px 5px gray);
+}
+
+
+.a_img_1 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/fb.png);
+    background-size: cover;
+    background-position: center;
+    margin: 7px;
+}
+
+.a_img_2 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/Twitter.png);
+    background-size: cover;
+    background-position: center;
+    margin: 7px;
+}
+
+.a_img_3 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/ig.png);
+    background-size: cover;
+    background-position: center;
+    margin: 7px;
+}
+
+.a_img_1:hover {
+    opacity: 0.7;
+}
+
+.a_img_2:hover {
+    opacity: 0.7;
+}
+
+.a_img_3:hover {
+    opacity: 0.7;
+}
+
+
+footer {
+    background-color: rgb(21, 20, 20);
+    color: #9da1a4;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    margin: 50px 0px 0px 0px;
+}
+
+
+
+.footer_a {
+    font-family: "Gill Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 0px 5px;
+}
+
+footer p {
+    margin: 0px
+}
+
+
+.button_img {
+    text-decoration: none;
+    border: 0px;
+    background-color: black;
+}
+
+
+.modal-content {
+    width: 1400px;
+    left: -100px;
+    transform: translate(-350px, 0px);
+}
+
+.carousel-caption {
+    mix-blend-mode: difference;
+}
+
+.animetion h1 {
+    color: white;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+
+@keyframes ani-ani {
+    0% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.ani img {
+    position: relative;
+    animation-name: ani-ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .modal-content {
+        width: 1100px;
+        transform: translate(-200px, 0px);
+    }
+}
+
+@media screen and (max-width: 1315px) {
+
+    .head_h1 h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .head_h1 h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .modal-content {
+        width: 900px;
+        transform: translate(-90px, 0px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .head_h1 h1 {
+        font-size: 25px;
+    }
+
+    .line {
+        height: 2px;
+    }
+
+    .line2 {
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .modal-content {
+        width: 800px;
+        transform: translate(-40px, 0px);
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .modal-content {
+        width: 700px;
+        transform: translate(0px, 0px);
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .modal-content {
+        width: 600px;
+        transform: translate(60px, 0px);
+    }
+
+    .head {
+        height: 40vh;
+
+    }
+
+    .ani img {
+        width: 100px;
+    }
+
+
+    .line {
+        width: 35%;
+        height: 1.5px;
+    }
+
+    .line2 {
+        width: 35%;
+        height: 1.5px;
+    }
+
+    @keyframes ani-line {
+        0% {
+            width: 0%;
+            left: 0;
+        }
+
+        100% {
+            width: 35%;
+            left: 0;
+        }
+    }
+
+    @keyframes ani-line-2 {
+        0% {
+            width: 0%;
+            right: 0;
+        }
+
+        100% {
+            width: 35%;
+            right: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .modal-content {
+        width: 450px;
+        transform: translate(150px, 0px);
+    }
+
+    .head {
+        height: 40vh;
+    }
+
+
+    .line {
+        width: 30%;
+        height: 1px;
+    }
+
+    .line2 {
+        width: 30%;
+        height: 1px;
+    }
+
+
+    @keyframes ani-line {
+        100% {
+            width: 30%;
+            left: 0;
+        }
+    }
+
+    @keyframes ani-line-2 {
+        100% {
+            width: 30%;
+            right: 0;
+        }
+    }
+
+    .animetion h1 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .modal-content {
+        width: 400px;
+        transform: translate(140px, 0px);
+    }
+ 
+}

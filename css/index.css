@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family:"Gill Sans", sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+body, body * {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    background: rgb(0, 255, 238);
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10000;
+}
+.shapes {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #1d1d1e;
+    overflow: hidden;
+}
+.shape {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape.shape-1 {
+    background: rgb(142, 168, 165) ;
+    width: 650px;
+    height: 650px;
+    margin: -325px 0 0 -325px;
+}
+.shape.shape-2 {
+    background: #6d968d;
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+}
+.shape.shape-3 {
+    background: rgb(48, 122, 119) ;
+    width: 270px;
+    height: 270px;
+    margin: -135px 0 0 -135px;
+}
+.custom-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    color: #000000;
+    font-size: 8rem;
+    font-weight: 700;
+    margin: -20px auto;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-family:"Gill Sans", sans-serif;
+}
+
+
+.home {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: #565656;
+    font-size: 0.8rem;
+}
+
+a {
+    background-color: rgb(254, 254, 254); 
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 32px;
+    margin: 25px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 3px solid #000000;
+}
+
+a:hover {
+    background-color: rgb(0, 0, 0); 
+    color: white;
+    border: 3px solid #000000;
+    transition: 0.5s;
+}
+
+
+.line {
+    margin: 20px 0px;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    transition:1s;
+    position: absolute;
+    top: 17%;
+    justify-content: center;
+    animation-name: ani-line; 
+    animation-duration: 3s; 
+    animation-iteration-count: 1; 
+    animation-direction: alternate;
+  }
+  
+  @keyframes ani-line {
+    0%   {width: 0%;}
+    100%  { width: 100%}
+  }
+
+ @media screen and ( max-width: 768px) {
+    .section-title {
+        font-size: 100px;
+    }
+    .line {
+        margin: 5px 0px;
+        height: 3px;
+    }
+ }
+
+ @media screen and ( max-width: 576px) {
+    .section-title {
+        font-size: 60px;
+        padding: 10px;
+    }
+    .line {
+        margin: 10px 0px;
+        height: 2px;
+    }
+    a {
+        padding: 10px 28px;
+        font-size: 15px;
+        border: 2px solid #000000;
+    }
+    a:hover {
+        border: 2px solid #000000;
+    }
+
+ }
